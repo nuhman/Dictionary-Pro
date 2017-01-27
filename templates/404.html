@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> MNS - Trivia Answering Site </title>
+	<style>
+		body{
+			background:#d35400;
+		}
+		.container{		
+			margin:0 auto;			
+			color:white;			
+			font-size: 30px;
+			text-align: center;
+		}
+		.container > h3{
+			font-size: 3em;
+		}
+		button{
+			padding:15px;
+			background:white;
+			color:#d35400;
+			border: 0;
+			outline:none;
+		}
+		button:hover{
+			cursor:pointer;
+		}
+		
+		
+		</style>
+		
+	
+	</style>
+  
+  </head>
+
+<body>
+	<div class="container">
+		<h3>BUMMER!</h3>
+		<p>That query hit me very bad.</p>
+		<button onclick="goBack()">Take me back!</button>
+	</div>
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+	
+</body>
+</html>

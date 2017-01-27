@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dictionary Pro </title>
+  <style>
+	
+
+
+	* {
+		box-sizing: border-box;
+	}
+	
+	.well{						
+		padding:10px;
+		text-align: center;
+		margin:0 auto;
+		width:100%;
+	}
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	[class*="col-"] {
+		
+		padding: 15px;
+	}
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+	@media only screen and (max-width: 480px) {
+		/* For mobile phones: */
+		[class*="col-"] {
+			width: 100%;
+		}		
+		.col-2{
+			margin-top:5%;
+			width: 40%;						
+		}
+		
+		
+	}
+	
+	
+	/*styles*/
+	body{
+	background : #ecf0f1;
+	color:#2c3e50;
+	font-family: Courier New;
+	}
+	.title{
+		letter-spacing:3px;
+		color:#2c3e50;
+		
+		text-align: center;
+		font-size: 40px;
+	}
+	input{
+		border:0px;
+		outline:none;
+		padding-left:10px;
+		padding-right:10px;
+		color:#2c3e50;
+		font-family: Courier New;
+		font-weight:bolder;
+		height:4.1em;
+		letter-spacing:0.1em;
+	}
+	input:focus{
+		outline:none;
+	}
+	.btn{
+		height:4.1em;
+		background: #2c3e50;
+		color:white;
+		border:0px;
+		font-family: Courier New;
+		
+	}
+	.btn:hover{
+		cursor:pointer;
+	}
+	.btn:focus, .btn:active{
+		outline:none;
+	}
+
+  </style>
+</head>
+<body>
+<!--<h6 class='title'> English Dictionary Pro</h6>		-->
+	<div class="well row">
+		<h6 class='title'> English Dictionary Pro</h6>
+		<form method="post" role="form">	
+			
+				<input type="text" name="word" class="keyword col-4" autofocus><button class="btn col-2" type="submit" name="submit"> Search </button>				
+			
+		</form>		
+	</div>
+</body>
+</html>

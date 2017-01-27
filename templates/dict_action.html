@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> {{ word }} | Dictionary Pro</title>
+  
+  <style>
+	body{
+		color:white;
+		background:#2c3e50;
+	}
+	.dict{
+		background:#e74c3c;				
+		padding:20px;		
+		border-radius:10px;
+		margin-bottom:10px;
+	}
+	
+	a{		
+		color:#e74c3c;
+	}
+  
+  </style>
+  
+</head>
+<body>
+	<div class="container">
+		<p><a href="javascript:history.back()">Go Back to the search page</a></p><hr>
+		<p>The word that you searched for : <strong>{{ word }}</strong></p>
+								
+		{% for i in range(meanings|length) %}
+			<div class="dict">
+				<p><strong>{{ names[i] }} </strong>- {{ meanings[i] }}</p>
+				{% for j in examples[i] %}
+					<p><i><u>Example:</u> {{ j }}</i></p>			
+				{% endfor %}
+			</div>
+		{% endfor %}
+		
+		<hr>
+		<p><strong>Synonym(s) , if any : </strong></p>
+		{% for i in synonyms %}
+		<span>{{ i }}</span>&nbsp&nbsp
+		{% endfor %}
+		<hr>
+		<p><strong>Antonym(s) , if any : </strong></p>
+		{% for i in antonyms %}
+		<span>{{ i }}</span>&nbsp&nbsp
+		{% endfor %}
+		
+		
+	
+	</div>
+</body>
+</html>
