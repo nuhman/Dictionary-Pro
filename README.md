@@ -5,6 +5,7 @@ Front-End:
   * HTML5
   * CSS3
   * JavaScript/JQuery
+  
 Back-End:
   * Python - Flask
   * Natural Language Took-Kit Library(Wordnet)
